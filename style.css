@@ -1,6 +1,65 @@
-body{
-    background-color: #fff7cc;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff2af;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.3rem;
+}
+
+.secondpage{
+    height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.secondpage p{
+    font-size: 1.3rem;
+}
+
+.secondpage{
+    background-color: #fff2af;
     font-family: Arial, Helvetica, sans-serif;
 
+    background-image: repeating-linear-gradient(
+        to right,
+        #fff2af 0px,
+        #fff2af 80px,
+        #ffed93 80px,
+        #ffed93 170px
+    );
+}
+
+.secondpage{
+    height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.thirdpage{
+    height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #cce6ff
+}
+
+.thirdpage p{
+    font-size: 1.3rem;
 }
