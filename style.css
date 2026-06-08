@@ -5,12 +5,24 @@
 }
 
 body{
-    background-color: #fff2af;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-container{
+    background-color: rgb(255, 253, 242);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
 .hero{
-    height: 100vh;
+    background-color: #fff2af;
+    border-radius: 40px;
+    margin: 30px;
+    min-height: 70vh;
+    width: 70%;
     text-align: center;
     padding: 120px 20px;
 }
@@ -24,17 +36,43 @@ body{
     font-size: 1.3rem;
 }
 
-.secondpage{
+.hero button{
+    background-color: #d03131;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    background-color: pink;
+}
+
+
+.studentshowcase{
+    height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #cce6ff
+}
+
+.studentshowcase p{
+    font-size: 1.3rem;
+}
+
+.endpage{
     height: 100vh;
     text-align: center;
     padding: 120px 20px;
 }
 
-.secondpage p{
+.endpage p{
     font-size: 1.3rem;
 }
 
-.secondpage{
+.endpage{
     background-color: #fff2af;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -47,19 +85,8 @@ body{
     );
 }
 
-.secondpage{
+.endpage{
     height: 100vh;
     text-align: center;
     padding: 120px 20px;
-}
-
-.thirdpage{
-    height: 100vh;
-    text-align: center;
-    padding: 120px 20px;
-    background-color: #cce6ff
-}
-
-.thirdpage p{
-    font-size: 1.3rem;
 }
