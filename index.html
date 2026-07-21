@@ -108,84 +108,90 @@
             </div>
             </div>
 
-        
             </div>
     </section>
 
-    <section id="Tutorials" class="tutorials-container">
-        <div class="tutorials-header">
-            <h2>Tutorials</h2>
-            <p>Learn crafts or something</p>
+    <section id="Tutorials" class="learn-container">
+        <div class = "learn-header">
+            <h2>learn crafts</h2>
+            <p>learn step by step tutorials.</p>
         </div>
-        <div class="dashboard-layout">
-            <div class="video-player-glass">
-                <div class="video-wrapper">
-                    <iframe id="main-video-player" src="#" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3 id="current-video-title">Beginner Crochet Basics</h3>
-                    <span id="current-video-level" class="badge">Beginner</span>
-                </div>
-            </div>
-            <div class="video-selection-box" id="video-dashboard-grid">
+        <div class="tutorials-grid">
+            <article class = "tutorials-grid">
+                <div class="tutorials-card">
+                    <div class="video-container">
+                        <iframe
+                            SRC="#"
+                            title="Crochet Basics"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-details">
+                        <span class="skill-badge">Beginner</span>
+                        <h3>Crochet Basics</h3>
+                        <p class="materials-lists"><strong>Materials Needed:</strong> materials here.</p>
+                        </div>
+            </article>
 
-            </div>
+            <div class="tutorials-grid">
+            <article class = "tutorials-grid">
+                <div class="tutorials-card">
+                    <div class="video-container">
+                        <iframe
+                            SRC="#"
+                            title="Crochet Basics"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-details">
+                        <span class="skill-badge">Beginner</span>
+                        <h3>Crochet Basics</h3>
+                        <p class="materials-lists"><strong>Materials Needed:</strong> materials here.</p>
+                        </div>
+            </article>
+
+            <article class="tutorials-grid">
+            <article class = "tutorials-grid">
+                <div class="tutorials-card">
+                    <div class="video-container">
+                        <iframe
+                            SRC="#"
+                            title="Crochet Basics"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-details">
+                        <span class="skill-badge">Beginner</span>
+                        <h3>Crochet Basics</h3>
+                        <p class="materials-lists"><strong>Materials Needed:</strong> materials here.</p>
+                        </div>
+            </article>
+
+            <article class="tutorials-grid">
+            <article class = "tutorials-grid">
+                <div class="tutorials-card">
+                    <div class="video-container">
+                        <iframe
+                            SRC="#"
+                            title="Crochet Basics"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-details">
+                        <span class="skill-badge">Beginner</span>
+                        <h3>Crochet Basics</h3>
+                        <p class="materials-lists"><strong>Materials Needed:</strong> materials here.</p>
+                        </div>
+            </article>
+        </div>
+
+
+
+
         </div>
     </section>
 
-
-<script>
-    document.addEventListener("DOMContentLoaded",() => {
-        fetch('tutorials.json')
-        .then(response => response.json())
-        .then(data => {
-            renderTutorials(data);
-        })
-        .catch(error => console.error("Error loading database", error));
-    });
-
-    function renderTutorials(videos){
-        const dashboardGrid = document.getElementById('video-dashboard-grid');
-        const categories={};
-
-        videos.forEach(video => {
-            if (!categories[video.category]){
-                categories[video.category]=[];
-            }
-            categories[video.category].push(video);
-        });
-
-        for(const craftType in categories){
-            const categoryRow = document.createElement('div');
-            categoryRow.className = 'category-row';
-
-            categoryRow.innerHTML = `
-            <h4>${craftType}</h4>
-            <div class="video-strip">
-                ${categories[craftType].map(video => `
-                    <div class="video-card" onclick="changeVideo('${video.id}', '${video.title}', '${video.level}')">
-                        <div class="thumbnail-placeholder">
-                            <img src="#">
-                            <div class="play-btn">▶</div>
-                            </div>
-                            <p>${video.title}</p>
-                            </div>
-                            `).join('')}
-                            </div>
-                            dashboardGrid.appendChild(categoryRow);
-                        }
-                    }
-
-                    function changeVideo(youtubeId, title, level){
-                        const player = document.getElementById('main-video-player');
-                        const videoTitle = document.getElementById('current-video-title');
-                        const VideoLevel = document.getElementById('current-video-level');
-
-                        player.src ='https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
-                        videoTitle.innerText = title;
-                        videoLevel.innerText = level;
-        }
-    }
+   
         </script>
         </body>
         </html>
