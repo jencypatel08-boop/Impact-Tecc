@@ -1,0 +1,144 @@
+.learn-container{
+    background-color: #badc82;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn-header{
+    text-align: center;
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.learn-header h2{
+    font-family: 'Fraunces',serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #5e4237;
+    margin-bottom: 10px;
+}
+
+.learn-header p{
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6d5347;
+}
+
+.tutorials-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.tutorials-card{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(94, 66, 55, 0.03);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: #000;
+}
+
+.video-container iframe{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+}
+
+.card-details{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.skill-badge{
+    align-self: flex-start;
+    background-color: rgba(136, 143, 98 , 0.2);
+    color: #5e4237;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.card-details h3{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    color: #5e4237;
+    margin-bottom: 10px;
+}
+
+.materials-list{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #6d5347;
+    margin-top: auto;
+}
+
+.learn-action{
+    margin-top: 50px;
+}
+
+.btn-explore{
+    display: inline-block;
+    background-color: #5e4237;
+    color: #faf6ee;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 14px 32px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(94, 66, 55, 0.15);
+}
+
+.btn-explore:hover{
+    background-color: #888f62;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(94, 66, 55, 0.2);
+}
+
+@media(max-width: 1024px) {
+    .tutorials-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 650px) {
+    .tutorials-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .learn-container{
+        padding: 60px 20px;
+    }
+}

@@ -1,0 +1,115 @@
+.charity-container{
+    background-color: #fcd9da;
+    padding: 80px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charity-header{
+    text-align: center;
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+.charity-header h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.charity-header p{
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6d5347;
+}
+
+.charity-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.charity-card{
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 28px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 15 35px rgba(94, 66, 55, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.charity-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(94, 66, 55, 0.1);
+}
+
+.charity-card-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.charity-category{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888f62;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.charity-card-content h3{
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    color: #5e4237;
+    margin-bottom: 12px;
+}
+
+.charity-card-content p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #6d5347;
+}
+
+.btn-charity{
+    display: inline-block;
+    text-align: center;
+    background-color: #5e4237;
+    color: #faf6ee;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-charity:hover{
+    background-color: #888f62;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px){
+    .charity-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .charity-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
