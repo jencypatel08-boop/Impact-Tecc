@@ -1,0 +1,76 @@
+.category-group{
+    margin-bottom: 40px;
+}
+
+.category-group h3{
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    color: #5e4327;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(94, 66, 55, 0.15);
+    padding-bottom: 8px;
+}
+
+.tutorials-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.tutorials-card{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 25px rgba(94, 66, 55, 0.05);
+}
+
+.video-container{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(94, 66, 55, 0.1);
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: #000;
+}
+
+.video-container iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.card-details{
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-badge{
+    align-self: flex-start;
+    background-color: rgba(136, 143, 98 , 0.2);
+    color: #5e4237;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.card-details h3{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    color: #5e4237;
+    margin: 0;
+}

@@ -10,8 +10,10 @@
 .charity-header{
     text-align: center;
     max-width: 650px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: -5px;
 }
+
 .charity-header h2{
     font-family: 'Fraunces', serif;
     font-size: 2.2rem;
@@ -24,14 +26,17 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #6d5347;
+    margin-bottom: 50px;
 }
 
 .charity-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 50px;
     max-width: 1300px;
     width: 100%;
+    margin-left: 340px;
+    margin-top: 15px;
 }
 
 .charity-card{
@@ -39,12 +44,13 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 28px;
-    padding: 30px 24px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 15 35px rgba(94, 66, 55, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .charity-card:hover{
@@ -52,20 +58,24 @@
     box-shadow: 0 20px 40px rgba(94, 66, 55, 0.1);
 }
 
+.charity-card-img{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background-color: #5e4237;
+}
+
+.charity-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
 .charity-card-content{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
-}
-
-.charity-category{
-    font-family: sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #888f62;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
+    padding: 40px 25px 40px 25px;
 }
 
 .charity-card-content h3{
@@ -83,6 +93,7 @@
 }
 
 .btn-charity{
+    margin: 0 24px 24px 24px;
     display: inline-block;
     text-align: center;
     background-color: #5e4237;
