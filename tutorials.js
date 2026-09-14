@@ -1,18 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch("tutorials.json")
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) throw new Error("Could not load JSON");
+            return res.json();
+        })
         .then(videos => renderSidebar(videos))
-        .catch(err => console.error("Error loading videos", err));
+        .catch(err => console.error("Error loading videos:", err));
 });
-
 function renderSidebar(videos) {
-    const container = document.getElementById("Video-sidebar");
+    const container = document.getElementById("video-sidebar");
+    if (!container) return;
+
     container.innerHTML = "";
 
     const categories = {};
     videos.forEach(v => {
-        if (!categories[v.category]) categories[v.category] = [];
-        categories[v.category].push(v);
+        const cat = v.Category || v.category || "All Tutorials";
+        if (!categories[cat]) categories[cat] = [];
+        categories[cat].push(v);
     });
 
     for (const [catName, videoList] of Object.entries(categories)) {
@@ -21,9 +26,9 @@ function renderSidebar(videos) {
 
         group.innerHTML = `
         <h3>${catName}</h3>
-        <div class ="tutorials-grid">
+        <div class="tutorials-grid">
         ${videoList.map(v => `
-            <article class = "tutorials-card">
+            <article class="tutorials-card">
                     <div class="video-container">
                         <iframe
                             src="https://www.youtube.com/embed/${v.id}"
