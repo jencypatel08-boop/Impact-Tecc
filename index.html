@@ -32,15 +32,41 @@
     </nav>
 
     <section id="hero" class = "hero-container">
+    <img src="images/hp_stickers/palette.png"
+    alt="craft color palette" class="sticker sticker-palette"
+    aria-hidden="true">
+
+    <img src="images/hp_stickers/pottery.png"
+    alt="pottery pot" class="sticker sticker-pottery"
+    aria-hidden="true">
+
+    <img src="images/hp_stickers/pearls.png"
+    alt="white pearls" class="sticker sticker-pearl1"
+    aria-hidden="true">
+
+    <img src="images/hp_stickers/pearls.png"
+    alt="white pearls" class="sticker sticker-pearl2"
+    aria-hidden="true">
+
+    <img src="images/hp_stickers/pearls.png"
+    alt="white pearls" class="sticker sticker-pearl3"
+    aria-hidden="true">
+
+    <img src="images/hp_stickers/yarn.png"
+    alt="blue yarn" class="sticker sticker-yarn"
+    aria-hidden="true">
+
+
         <div class ="hero-glass-card">
             <h1>Creativity with purpose</h1>
             <p>Explore student creations, discover tutorials, find crafting resources, and learn how creative projects can make a postive impact on the community.</p>
             
         <a href="#showcase" class="btn-primary">Get started</a>
         </div>
-        </section>      
+        </section>  
 
-    <section id="showcase" class ="showcase-container">
+
+     <section id="showcase" class ="showcase-container">
         <div class="showcase-split-layout">
             <div class="showcase-sidebar-glass">
                 <div class="sidebar-header">
@@ -49,18 +75,19 @@
                 </div>
 
                 <ul class="sidebar-filters">
-                    <li><button class="filter-btn active">All creations</button></li>
-                    <li><button class="filter-btn">Crochet</button></li>
-                    <li><button class="filter-btn">Jewelry</button></li>
-                    <li><button class="filter-btn">Upcycled</button></li>
-                    <li><button class="filter-btn">Ceramics</button></li>
+                    <li><button class="filter-btn active" data-filter="all" aria-pressed="true">All creations</button></li>
+                    <li><button class="filter-btn" data-filter="crochet" aria-pressed="false">Crochet</button></li>
+                    <li><button class="filter-btn" data-filter="ceramics" aria-pressed="false">Knitting</button></li>
+                    <li><button class="filter-btn" data-filter="jewelry" aria-pressed="false">Jewellery</button></li>
+                    <li><button class="filter-btn" data-filter="upcycled" aria-pressed="false">Upcycled</button></li>
+                
                 </ul>
             </div>
             
             <div class="gallery-scroll-box">
             <div class="pinterest-grid">
 
-                <div class="pin-card">
+                <div class="pin-card" data-category="crochet">
                     <img src="images/duck.jpg" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Crochet Flower</h3>
@@ -68,7 +95,7 @@
             </div>
             </div>
 
-            <div class="pin-card">
+            <div class="pin-card" data-category="jewelry">
                 <img src="images/bear.webp" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Jewellery</h3>
@@ -76,7 +103,7 @@
             </div>
             </div>
 
-            <div class="pin-card">
+            <div class="pin-card" data-category="upcycled">
                 <img src="images/turtle.webp" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Jewellery</h3>
@@ -84,7 +111,7 @@
             </div>
             </div>
 
-            <div class="pin-card">
+            <div class="pin-card" data-category="ceramics">
                 <img src="images/bear.webp" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Jewellery</h3>
@@ -92,7 +119,7 @@
             </div>
             </div>
 
-            <div class="pin-card">
+            <div class="pin-card" data-category="crochet">
                     <img src="images/duck.jpg" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Crochet Flower</h3>
@@ -100,7 +127,7 @@
             </div>
             </div>
 
-            <div class="pin-card">
+            <div class="pin-card" data-category="jewelry">
                 <img src="images/turtle.webp" alt="crochet flower">
                 <div class="glass-overlay">
                 <h3>Jewellery</h3>
@@ -115,22 +142,20 @@
 
     <section id="Tutorials" class="learn-container">
         <div class="learn-header">
-            <h2>learn crafts</h2>
-            <p>learn step by step tutorials.</p>
         </div>
         <div class="tutorials-grid">
             <article class="tutorials-card">
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/watch?v=DKAKxjnA8aY"
-                            title="Crochet Basics"
+                            src="https://www.youtube.com/embed/DKAKxjnA8aY"
+                            title="Quick Projects"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <div class="card-details">
                         <span class="skill-badge">Beginner</span>
-                        <h3>Crochet Basics</h3>
+                        <h3>Quick Projects</h3>
                         </div>
             </article>
 
@@ -152,28 +177,29 @@
             <article class = "tutorials-card">
                     <div class="video-container">
                         <iframe
-                            src="https://www.youtube.com/watch?v=7j22vG4Toa0"
+                            src="https://www.youtube.com/embed/7j22vG4Toa0"
                             title="Crochet Basics"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
                     </div>
                     <div class="card-details">
-                        <span class="skill-badge">Beginner</span>
-                        <h3>Crochet Basics</h3>
+                        <span class="skill-badge">Intermediate</span>
+                        <h3>Pattern Pratice</h3>
                         </div>
                     </article>
                     </div>
 
                     <div class="learn-action">
-                        <a href="tutorials.html" class="btn-explore">Explore Tutorials</a>
+                        <a href="tutorials.html" class="btn-explore">Explore more tutorials</a>
                     </div>
-            </section>
+                    </section>
 
             <section id="charity" class="charity-container">
-                <div class="charity-header">
-                    <h2>Support Charity</h2>
-                    <p>Help us make a difference in the community by supporting charities.</p>
+            <div class="charity-header">
+                <h2>Looking for a place to donate your handmade crafts?</h2>
+
+                <p>These organisations welcome handmade items and help connect them with people in need.</p>
                 </div>
 
                 <div class="charity-grid">
@@ -211,6 +237,37 @@
                     </article>
                 </div>
             </section>
+
+            <script>
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const galleryCards = document.querySelectorAll('.pin-card');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const selectedFilter = button.dataset.filter;
+                        filterButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.setAttribute('aria-pressed', 'false');
+                        });
+
+                        button.classList.add('active');
+                        button.setAttribute('aria-pressed', 'true');
+
+                        galleryCards.forEach(card => {
+                            const cardCategory = card.dataset.category;
+
+                            if (
+                                selectedFilter === 'all' || 
+                                cardCategory === selectedFilter 
+                        ){
+                                card.style.display = '';
+                        } else {
+                            card.style.display ='none';
+                        }
+                        });
+                    });
+                });
+            </script>
         </body>
         </html>
     

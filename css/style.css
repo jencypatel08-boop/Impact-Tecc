@@ -328,3 +328,74 @@ body{
     }
 }
 
+.sticker{
+    position: absolute;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.12));
+}
+
+.sticker-palette{
+    width: 350px;
+    top: 90px;
+    left: -60px;
+    transform: rotate(-8deg);
+}
+
+.sticker-pottery{
+    width: 240px;
+    right: 10px;
+    bottom: 30px;
+    transform: rotate(8deg);
+}
+
+.sticker-pearl1{
+    width: 40px;
+    top: 260px;
+    right: 313px;
+    z-index: 12;
+}
+
+.sticker-pearl2{
+    width: 30px;
+    top: 227px;
+    right: 400px;
+    z-index: 12;
+}
+
+.sticker-pearl3{
+    width: 45px;
+    top: 185px;
+    right: 340px;
+    z-index: 12;
+    transform: rotate(30deg);
+}
+
+.sticker-yarn{
+    width: 240px;
+    left: 130px;
+    bottom: -80px;
+    transform: rotate(-20deg);
+}
+
+
+@media (max-width: 768px){
+    .sticker-palette{
+        width: 75%;
+        left: 0;
+    }
+
+    .sticker-hero-pottery{
+        width: 70px;
+        right: 0;
+    }
+
+    .sticker-hero-pearls{
+        width: 45px;
+    }
+
+}

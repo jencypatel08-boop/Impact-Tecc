@@ -1,22 +1,43 @@
 [
+        {
+        "id": "zJU2s-gfBYo",
+        "title": "Crochet Hearts",
+        "Category": "Crochet Basics",
+        "level": "Beginner"
+    },
+    
     {
-        "id": "3PAu4Piyclc",
-        "title": "Crochet Magic Ring",
+        "id": "aAxGTnVNJiE",
+        "title": "Basic Crochet",
         "Category": "Crochet Basics",
         "level": "Beginner"
     },
 
     {
-        "id": "3PAu4Piyclc",
+        "id": "Ve1ePBfgEiY&t",
         "title": "Crochet Magic Ring",
-        "Category": "Crochet Basics",
+        "Category": "Knitting Basics",
         "level": "Beginner"
     },
 
     {
-        "id": "3PAu4Piyclc",
-        "title": "Crochet Magic Ring",
-        "Category": "Crochet Basics",
+        "id": "m1FbeAvBrVE",
+        "title": "Knitting Guide",
+        "Category": "Knitting Basics",
+        "level": "Beginner"
+    },
+
+    {
+        "id": "EqZ-v0Jd6U0",
+        "title": "Diy Jewellery",
+        "Category": "Jewellery Making",
+        "level": "Beginner"
+    },
+
+    {
+        "id": "wCq0k1kpleM",
+        "title": "How to Guide",
+        "Category": "Jewellery Making",
         "level": "Beginner"
     }
 ]
